@@ -1,4 +1,4 @@
-name: Workflow1
+name: Workflow1a
 
 # Controls when the action will run. We only want that this action to happens when
 # we open a pull request that points to main or Staging
@@ -20,6 +20,9 @@ jobs:
     name: Run the action 1
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Action 1
         uses: CarlosDBP/hello-github-actions/actions/action.yml@main
       
