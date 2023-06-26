@@ -19,6 +19,7 @@ jobs:
   run_action:
     name: Run the action 1
     runs-on: ubuntu-latest
+    steps:
       - name: Action 1
         uses: CarlosDBP/hello-github-actions/actions/action@main
       
