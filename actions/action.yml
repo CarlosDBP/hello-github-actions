@@ -1,0 +1,13 @@
+name: "Test action"
+description: "Friendly greeting."
+author: "team_a@github.com"
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v3
+    
+    - name: Install pipenv and Pipfile packages 🏗️
+      shell: bash
+      run: |
+        echo "Testing my action"

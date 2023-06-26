@@ -1,4 +1,4 @@
-name: Workflow1a
+name: Workflow1
 
 # Controls when the action will run. We only want that this action to happens when
 # we open a pull request that points to main or Staging
